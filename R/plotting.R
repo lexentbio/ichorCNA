@@ -257,9 +257,9 @@ plotCNlogRByChr <- function(dataIn, param = NULL, colName = "copy", segs=NULL, c
           invisible()
         })
       }
+      plotChrLines(dataIn[,"chr"],coordEnd$chrBkpt,yrange)
     }
     lines(as.numeric(c(1,coord$posns[length(coord$posns)])),rep(0,2),type="l",col="grey",lwd=2)
-    plotChrLines(dataIn[,"chr"],coordEnd$chrBkpt,yrange)
   }
 }
 
